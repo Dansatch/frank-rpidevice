@@ -1,0 +1,17 @@
+{
+  "name": "frank-rpidevice",
+  "version": "0.0.1",
+  "private": true,
+  "main": "client.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node client.js",
+    "postinstall": "bash setup-audio.sh"
+  },
+  "dependencies": {
+    "ws": "^8.18.0",
+    "@picovoice/porcupine-node": "^3.0.0",
+    "@picovoice/cobra-node": "^2.0.0",
+    "@picovoice/pvrecorder-node": "^1.2.0"
+  }
+}

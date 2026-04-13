@@ -1,0 +1,15 @@
+[Unit]
+Description=Frank RPi Device Client
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/opt/frank-rpidevice
+ExecStart=/opt/frank-rpidevice/start.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

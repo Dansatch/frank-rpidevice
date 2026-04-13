@@ -1,0 +1,20 @@
+{
+  "serverUrl": "wss://your-server/v1/device/stream",
+  "deviceId": "",
+  "speakerDevice": "plughw:1,0",
+  "picovoiceAccessKey": "",
+  "micDeviceIndex": -1,
+
+  "porcupineSensitivity": 0.65,
+  "porcupineWakewordPath": "",
+
+  "endSilenceMs": 1200,
+  "maxRecordingMs": 10000,
+  "startSpeechProb": 0.55,
+  "endSpeechProb": 0.3,
+
+  "beepStartPath": "/opt/frank-rpidevice/beep_start.wav",
+  "beepStopPath": "/opt/frank-rpidevice/beep_stop.wav",
+
+  "volumePercent": 80
+}
