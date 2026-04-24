@@ -4,8 +4,19 @@ Raspberry Pi device client for Frank.
 
 ## Install
 
+## 🔐 SSH Setup (for private repo)
+
 ```bash
-git clone https://github.com/Dansatch/frank-rpidevice.git
+ssh-keygen -t ed25519 -C "frank-pi"
+cat ~/.ssh/id_ed25519.pub
+```
+
+Add the key to GitHub -> Settings -> SSH keys(Authentication)
+
+Then on raspbery pi run:
+
+```bash
+git clone git@github.com:Dansatch/frank-rpidevice.git
 cd frank-rpidevice
 ./install.sh
 ```

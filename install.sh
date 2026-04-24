@@ -11,6 +11,7 @@ sudo chown -R "$USER":"$USER" "$APP_DIR"
 echo "Copying files..."
 cp client.js package.json start.sh setup-audio.sh "$APP_DIR"/
 cp config.template.json "$APP_DIR"/
+
 if [ -f package-lock.json ]; then
   cp package-lock.json "$APP_DIR"/
 fi
@@ -21,7 +22,16 @@ fi
 
 echo "Installing OS dependencies..."
 sudo apt update
-sudo apt install -y mpg123 alsa-utils sox
+sudo apt install -y mpg123 alsa-utils sox curl
+
+echo "Installing Node.js (if missing)..."
+if ! command -v node >/dev/null 2>&1; then
+  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+  sudo apt install -y nodejs
+fi
+
+echo "Node version:"
+node -v || true
 
 echo "Installing Node dependencies..."
 cd "$APP_DIR"
