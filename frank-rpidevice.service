@@ -1,12 +1,16 @@
 [Unit]
 Description=Frank RPi Device Client
-After=network-online.target
+After=network-online.target sound.target
 Wants=network-online.target
 
 [Service]
 Type=simple
 User=frank
+Group=frank
+SupplementaryGroups=audio
 WorkingDirectory=/opt/frank-rpidevice
+Environment=HOME=/home/frank
+Environment=XDG_RUNTIME_DIR=/run/user/1000
 ExecStart=/opt/frank-rpidevice/start.sh
 Restart=always
 RestartSec=3
