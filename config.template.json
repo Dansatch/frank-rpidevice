@@ -5,7 +5,7 @@
   "picovoiceAccessKey": "",
   "micDeviceIndex": 1,
 
-  "porcupineSensitivity": 0.65,
+  "porcupineSensitivity": 0.85,
   "porcupineWakewordPath": "/home/frank/frank-rpidevice/Frank_ww_pi.ppn",
 
   "endSilenceMs": 1200,

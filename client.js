@@ -47,7 +47,7 @@ const SPEAKER_DEVICE = config.speakerDevice || "plughw:1,0";
 
 const ACCESS_KEY = config.picovoiceAccessKey;
 const MIC_DEVICE_INDEX = Number(config.micDeviceIndex ?? -1);
-const PORCUPINE_SENSITIVITY = Number(config.porcupineSensitivity ?? 0.65);
+const PORCUPINE_SENSITIVITY = Number(config.porcupineSensitivity ?? 0.85);
 const WAKEWORD_PATH = config.porcupineWakewordPath || "";
 
 const SAMPLE_RATE = 16000;
