@@ -250,3 +250,11 @@ frank-rpidevice/
 ├── package.json
 └── README.md
 ```
+
+## Copyright
+
+This repository is published to showcase the project and its implementation.
+
+All source code remains the intellectual property of Hilary Asogwa. No permission is granted to copy, modify, redistribute, or use this software without prior written consent.
+
+© 2026 Hilary Asogwa. All Rights Reserved.
