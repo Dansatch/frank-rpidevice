@@ -2,6 +2,10 @@
 
 Raspberry Pi device client for Frank.
 
+<img width="500" height="666" alt="prototype1" src="https://github.com/user-attachments/assets/d3004743-156b-46c7-8631-a3ff6173c887" />
+<img width="500" height="666" alt="prototype2" src="https://github.com/user-attachments/assets/d054ac87-a014-4dfa-a898-fcaf309d5d4d" />
+
+
 ## Features
 
 - Wake word detection (Porcupine)
